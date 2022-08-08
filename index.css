@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.thumnail {
+  width: 100%;
+}
+
+.video-title {
+  width: 200px;
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.video-container {
+  padding-top: 70px;
+  vertical-align: top;
+}
+
+.video-info-left {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.video-info-right {
+  display: inline-block;
+}
+
+.profile-image {
+  border-radius: 100px;
+  width: 40px;
+}
+
+.video-channel,
+.video-stats {
+  font-weight: 400;
+  color: #606060;
+  font-size: 15px;
+}
+
+.videos-container {
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 75px;
+}
+
+@media (min-width: 867px) {
+  .videos-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1150px) {
+  .videos-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+header {
+  display: flex;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  justify-content: space-between;
+}
+
+.menu-icon,
+.logo {
+  height: 24px;
+}
+
+
+.header-middle {
+  display: flex;
+  margin-left: 110px;
+  margin-right: 110px;
+  flex: 1;
+  height: 60px;
+  align-items: center;
+
+}
+
+.search-bar {
+  flex: 1;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  min-width: 0;
+  width: 0;
+}
+
+
+
+.search-btn {
+  width: 47px;
+  height: 40px;
+  margin-left: -2px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.search-icon {
+  height: 25px;
+}
+
+.speaker-btn {
+  width: 47px;
+  height: 47px;
+  border-radius: 50px;
+  border: none;
+}
+
+.speaker-icon {
+  height: 25px;
+}
+
+
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  align-items: center;
+}
+
+
+.camera,
+.bell,
+.profile {
+  height: 30px;
+}
+
+.profile {
+  border-radius: 100px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 70px;
+  font-size: 10px;
+}
+
+.sidebar-item {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-item:hover {
+  background-color: rgb(247, 246, 246);
+  cursor: pointer;
+}
+
+.sidebar-item-icon {
+  width: 25px;
+}
